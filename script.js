@@ -1,6 +1,8 @@
 var today = new Date();
-var time = today.getHours() + ":" + today.getMinutes();
+// var time = today.getHours() + ":" + today.getMinutes();
+var time = moment().format("dddd, MMMM Do")
 $("#currentDay").text(time);
+
 
 function changingColor() {
   var currentHour = moment().hours();
